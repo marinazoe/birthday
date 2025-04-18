@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f0c7dc, #557d52);
+    font-family: "ziclets", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #e090b9;
+  }
+  
+  /* Szene mit allen drei Bildern nebeneinander */
+  #cake-scene {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  /* Einheitliche Größe für alle Figuren */
+  .character {
+    width: 150px;
+    height: auto;
+  }
+  
+  /* Flamme über dem Kuchen */
+  #flame {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -7%;
+    left: 50.5%;
+    transform: translateX(-50%);
+    transition: opacity 1s ease-out;
+    opacity: 1;
+    filter: drop-shadow(0 0 5px orange);
+  }
+  
+  /* Glückwunschtext */
+  #message {
+    font-size: 1.5rem;
+    display: none;
+  }
+
+  @keyframes hop {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+  }
+  
+  
